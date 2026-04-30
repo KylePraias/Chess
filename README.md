@@ -4,7 +4,7 @@
 
 Old chess game I made in python years ago.
 
-2026-04-29: Completely revamped engine adding move pruning and quiescence search. The engine now plays much stronger, can analyse moves at a much deeper depth, and lags less
+29/04/2026: Completely revamped engine adding move pruning and quiescence search. The engine now plays much stronger, can analyse moves at a much deeper depth, and lags less
 
 ### How do I get set up? ###
 
