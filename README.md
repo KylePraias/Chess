@@ -4,6 +4,8 @@
 
 Old chess game I made in python years ago.
 
+2026-04-29: Completely revamped engine adding move pruning and quiescence search. The engine now plays much stronger, can analyse moves at a much deeper depth, and lags less
+
 ### How do I get set up? ###
 
 Make sure to have pip installed, and the "chess" and "pygame" modules installed
