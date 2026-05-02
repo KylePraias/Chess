@@ -631,7 +631,7 @@ scr_Width  = 1200 * scale_factor
 scr_Height = 1000 * scale_factor
 displaySurface = pygame.display.set_mode((scr_Width, scr_Height), 0, 32)
 historySurface = pygame.Surface((board_Size, scr_Height - board_Size - boardOffset * 3))
-historyFont = pygame.font.Font(asset_path("assets/Font/Roboto-Regular.ttf"), 14)
+historyFont = pygame.font.Font(asset_path("assets/font/Roboto-Regular.ttf"), 14)
 
 def load_scaled_image(path, scale_factor):
     image = pygame.image.load(asset_path(path))

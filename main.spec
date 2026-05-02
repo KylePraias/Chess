@@ -1,11 +1,12 @@
 # -*- mode: python ; coding: utf-8 -*-
-
+import os
+project_dir = os.path.dirname(os.path.abspath(SPEC))
 
 a = Analysis(
     ['main.py'],
-    pathex=[],
+    pathex=[project_dir],
     binaries=[],
-    datas=[('assets', 'assets')],
+    datas=[(os.path.join(project_dir, 'assets'), 'assets')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -15,14 +16,13 @@ a = Analysis(
     optimize=0,
 )
 pyz = PYZ(a.pure)
-
 exe = EXE(
     pyz,
     a.scripts,
     a.binaries,
     a.datas,
     [],
-    name='main',
+    name='Chess',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
